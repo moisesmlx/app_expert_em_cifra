@@ -31,6 +31,7 @@ from escala import *
 import random
 import zipp
 import os
+from gemini import chat_bot
 
 
 # Armazenar dados descartavel
@@ -144,6 +145,7 @@ st.markdown('''
             unsafe_allow_html=True
             )
 
+
 # Criando o contêiner do formulário
 tons = [
     'A', 'Am', 'A#', 'A#m',
@@ -203,3 +205,4 @@ if botao_enviar:
                 file_name=fr'Minhas_cifras/{nome}.zip',
                 mime="application/pdf"
             )
+chat_bot()
