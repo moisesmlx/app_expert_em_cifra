@@ -1,9 +1,11 @@
-# AIzaSyAg-OdxAdDP4O508Gj5IJ0ELzxHpmLBzXM
+
 import streamlit as st
 import google.generativeai as genai
+
+
 def chat_bot():
     # 1. Configurar a chave de API do Gemini
-    GOOGLE_API_KEY = "AIzaSyAg-OdxAdDP4O508Gj5IJ0ELzxHpmLBzXM"
+    GOOGLE_API_KEY = ''
     genai.configure(api_key=GOOGLE_API_KEY)
 
     # 2. Inicializar o modelo Gemini
