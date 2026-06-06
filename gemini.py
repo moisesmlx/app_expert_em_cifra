@@ -1,4 +1,4 @@
-# AIzaSyAg-OdxAdDP4O508Gj5IJ0ELzxHpmLBzXM
+
 import streamlit as st
 import google.generativeai as genai
 def chat_bot():
