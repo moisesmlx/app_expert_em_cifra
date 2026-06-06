@@ -5,7 +5,11 @@ import google.generativeai as genai
 
 def chat_bot():
     # 1. Configurar a chave de API do Gemini
+<<<<<<< HEAD
     GOOGLE_API_KEY = ''
+=======
+    GOOGLE_API_KEY = ""
+>>>>>>> e5c0e1227834f0c10db4e035e2535c82185bede6
     genai.configure(api_key=GOOGLE_API_KEY)
 
     # 2. Inicializar o modelo Gemini
