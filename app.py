@@ -173,16 +173,6 @@ with st.form(key="meu_formulario", width=500):
     
     # Botão de envio obrigatório dentro do formulário
     botao_enviar = st.form_submit_button(label="Enviar Dados")
-
-'''list_cifras = {}
-cont = 0
-for item in os.listdir('Minhas_cifras'):
-    with open(fr'Minhas_cifras/{item[:-4]}.txt', 'r', encoding='utf-8') as texto:
-        cifra = texto.read()
-        list_cifras[item[:-4]] = cifra
-        if cont == 0:
-            st.markdown(f'{cifra}', unsafe_allow_html=True)
-        cont += 1'''
     
 # Processando as informações após o clique
 if botao_enviar:
