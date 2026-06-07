@@ -158,6 +158,7 @@ tons = [
 
 list_codigos_letras = ['owiwbh', 'fghgvfwrp', 'wrwr', 'rewrw', 'oyy', 'ngf', 'gyoh']
 cripto_id = f'''{str(random.choice(list_codigos_letras))}{str(random.choice(list_codigos_letras))}{str(random.choice(list_codigos_letras))}{str(random.randint(1000, 50000000))}''' 
+
 with st.form(key="meu_formulario", width=500):
     
     nome = st.text_input(':blue[Digite um nome para sua cifra:]', placeholder='Nome da Cifra')
@@ -173,6 +174,16 @@ with st.form(key="meu_formulario", width=500):
     # Botão de envio obrigatório dentro do formulário
     botao_enviar = st.form_submit_button(label="Enviar Dados")
 
+'''list_cifras = {}
+cont = 0
+for item in os.listdir('Minhas_cifras'):
+    with open(fr'Minhas_cifras/{item[:-4]}.txt', 'r', encoding='utf-8') as texto:
+        cifra = texto.read()
+        list_cifras[item[:-4]] = cifra
+        if cont == 0:
+            st.markdown(f'{cifra}', unsafe_allow_html=True)
+        cont += 1'''
+    
 # Processando as informações após o clique
 if botao_enviar:
     if nome == '':
@@ -199,6 +210,7 @@ if botao_enviar:
         # Abra o arquivo em modo de leitura binária ("rb")
         with open(fr'Minhas_cifras/{nome}.zip', "rb") as arquivo_zip:
             st.download_button(
+                
                 label=f"Baixar sua cifra {nome} em zip",
                 data=arquivo_zip,
                 file_name=fr'Minhas_cifras/{nome}.zip',
