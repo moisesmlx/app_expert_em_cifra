@@ -1,0 +1,12 @@
+…or create a new repository on the command line
+echo "# app_expert_em_cifra" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main_expert
+git remote add origin https://github.com/moisesmlx/app_expert_em_cifra.git
+git push -u origin main_expert
+…or push an existing repository from the command line
+git remote add origin https://github.com/moisesmlx/app_expert_em_cifra.git
+git branch -M main_expert
+git push -u origin main_expert
