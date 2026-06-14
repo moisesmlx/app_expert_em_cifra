@@ -173,12 +173,7 @@ with st.form(key="meu_formulario", width=500):
     
     # Botão de envio obrigatório dentro do formulário
     botao_enviar = st.form_submit_button(label="Enviar Dados")
-<<<<<<< Updated upstream
-    
-=======
 
-
->>>>>>> Stashed changes
 # Processando as informações após o clique
 if botao_enviar:
     if nome == '':
